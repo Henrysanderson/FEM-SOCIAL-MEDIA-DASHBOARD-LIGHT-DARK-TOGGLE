@@ -2,6 +2,17 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.1875rem;
+}
+@media (min-width: 71.875em) {
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 
 a,
@@ -23,6 +34,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-inter);
+  background: var(--dark-bg);
+  color: var(--dark-text2);
 }
 
 :root {
@@ -55,9 +68,9 @@ body {
 .container {
   padding: 0 1.5625rem;
   max-width: 69.375rem;
-  margin: 0 auto;
+  margin: 0 auto 2.875rem;
 }
-@media (min-width: 59.375em) {
+@media (min-width: 71.875em) {
   .container {
     padding: 0;
   }
@@ -67,9 +80,27 @@ body {
   padding: 1.25rem;
 }
 
-.toggle_button {
+.toggle {
+  border: none;
+}
+.toggle__button {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   color: var(--toggle);
+}
+.header {
+  margin-top: 2.25rem;
+}
+@media (min-width: 40em) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--dark-text1);
 }/*# sourceMappingURL=styles.css.map */
